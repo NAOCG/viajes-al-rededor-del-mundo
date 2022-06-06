@@ -1,0 +1,358 @@
+*{
+    box-sizing: border-box;
+}
+img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 25%;
+  height:  155px;
+  color: white;
+  background-image:url("fiw.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 1.2em;
+}
+p{
+    font-size: 1.25em;
+}
+ul{
+    list-style: none;
+}
+li{
+    font-size: 1.25em;
+}
+button{
+  font-size: 1px transparent;
+  font-weight: bold;
+  padding: 1px 1px;
+  border-radius: 1px;
+  border: 1px solid rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  width: 200px transparent;
+    background-color: transparent;
+}
+button:hover{
+    background-color: blue;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.colo-acento{
+    color: blueviolet;
+}
+header{
+    background-color: rgb(245,245,245);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.6em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+}
+header a:hover{
+    color: blue;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height:  90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("viaje.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+#hero h1{
+    color: white;
+}
+#hero button{
+    font-size: 1.20em;
+}
+#nuestros-programas button{
+    font-size: 1.20em;
+}
+#somos-proya .container{
+  background-color: #DCDCDC;
+    text-align: center;
+    padding: 100px 25px;
+    background-color: #DCDCDC;
+}
+#nuestros-programas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+#nuestros-programas .container{
+    padding: 100px 12px;
+}
+#nuestros_programas h2{
+    margin-top: 0;
+}
+#nuestros-programas p{
+    display: none;
+}
+#nuestros-programas .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 10px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("seu.jpg");
+        background-repeat: no-repeat;
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("mala.jpg");
+        background-repeat: no-repeat;
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("rom.jpg");
+}
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("tok.jpg");
+}
+#consecuencias .container{
+    text-align: left;
+    padding: 200px 12px;
+    background: white;
+}
+#consecuencias .container H3{
+  text-align: center;
+}
+#consecuencias li{
+    margin: 10px 0px;
+    font-weight: bold;
+}
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height:  80vh;
+}
+#final h2{
+    font-size: 9vw;
+}
+#final button{
+    font-size: 5vm;
+}
+footer{
+    background-color: rgb(230,230,230);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media(min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #hero h1{
+        font-size: 5em;
+    }
+    #Somos-proya .container{
+      background-color: #DCDCDC;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 100px 25px;
+    }
+    #Somos-proya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #Somos-proya h2{
+        margin-top: 0px;
+    }
+    #Somos-proya .img-container{
+        background-image: url("regis.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+    }
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 70px 10px;
+    }
+    #nuestors-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #nuestros-programas h2{
+        font-size: 4em;
+    }
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+    #nuestros-programas .cartar{
+        padding: 10px;
+        background-size: 80% 90px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50,50,50,0.5);
+        box-shadow: 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+            ,url("seu.jpg");
+    }
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+            ,url("mala.jpg");
+
+    }
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+            ,url("rom.jpg");
+    }
+    .carta:nth-child(4){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+            ,url("tok.jpg");
+    }
+    #consecuencias .container H3{
+      text-align: center;
+      font-weight: bold;
+    }
+    #consecuencias .container li{
+      text-align: left;
+      margin-left: 80px;
+      font-style: normal;
+    }
+
+    #consecuencias .container{
+      background-color: #DCDCDC;
+      column-count: 3;
+      column-gap: 10px;
+      column-rule: 4px dotted gray;
+      padding: 235px 10px;
+    }
+
+    #final h2{
+        font-size: 3em;
+    }
+    #final button{
+        font-size: 2em;
+    }
+    footer .container{
+        justify-content: flex-end;
+        padding: 100px 15px;
+
+    }
+}
+@media (min-width: 100px){
+    #consecuencias{
+        background-position-x: calc(100vw - 800px) ;
+    }
+}

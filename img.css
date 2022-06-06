@@ -1,0 +1,38 @@
+h1{
+  font-family: sans-serif;
+  color: blueviolet;
+}
+h2{
+  font-family: sans-serif;
+  color: #b17c54;
+}
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blue;
+    background-image:url("seu.jpg");
+}
+img{
+    background-size:cover;
+    background-position: center;
+    height: 195px;
+    width: 400px;
+  }
+#hola .container{
+    display: flex;
+    padding: 5px 5px;
+    text-align: center;
+}
+p {
+text-align: justify;
+width: 50%;
+max-width: 2000px;
+padding-left: 40px;
+display: flex;
+flex-direction: column;
+}
